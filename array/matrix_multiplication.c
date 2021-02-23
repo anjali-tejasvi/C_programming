@@ -4,6 +4,12 @@
 // In order to multiply two matrices
 //Column of 1st matrix = Row of 2nd matrix
 
+//r1 = row of first matrix 
+//r2 = row of second matrix
+//c1 = column of first matrix
+//c2 = column of scond matrix
+
+
 void getMatrixElements(int matrix[10][10],int row, int column)
 {
 	printf("\nEnter the Elements\n");
@@ -55,10 +61,8 @@ void display(int result[][10],int row, int column)
 		for(int j=0; j<column ; j++)
 		{
 			printf("%d ",result[i][j]);
-			if(j== column-1)
-				printf("\n");
-
 		}
+		printf("\n");
 	}
 }
 
